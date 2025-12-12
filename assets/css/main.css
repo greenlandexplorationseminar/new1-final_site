@@ -73,10 +73,8 @@ p {
     border-radius: 5px;  /* Rounded corners */
     text-align: center;
     white-space: nowrap;  /* Prevent text from wrapping */
-    max-width: 180px;  /* Ensure a minimum width */
-    line-height: 1.2; /* Allow proper spacing between lines */
+    min-width: 150px;  /* Ensure a minimum width to prevent truncation */
     transition: background-color 0.3s ease;
-    min-width: 180px; /* Minimum width to make sure text does not get cut off */
 }
 
 /* Hover color for all tabs */
@@ -87,14 +85,6 @@ p {
 /* Active tab color */
 #nav ul li.active a {
     background-color: #0056b3;  /* Darker blue for active tab */
-}
-
-/* Ensures no text overflow */
-#nav ul li a {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 200px; /* Allow more width for tabs */
-    display: inline-block;
 }
 
 /* Main Content Styling */
